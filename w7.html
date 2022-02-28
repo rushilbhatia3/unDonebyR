@@ -1,0 +1,210 @@
+!DOCTYPE HTML>
+
+<html>
+<link href="css/style.css" rel="stylesheet">
+    <title> Week  7 </title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    @media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+    </style>
+<body>
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>Rushil</b> Bhatia</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Home Page</a>
+      <a href="Final Project.html" class="w3-bar-item w3-button">Assignments</a>
+    <a href="More.html" class="w3-bar-item w3-button">Final Project</a>
+    </div>
+  </div>
+</div>
+<div class="w3-content" style="max-width:1100px">
+
+
+ <div class="w3-row w3-display-container" id="body">
+<div class="w3-auto w3-container w3-padding-64">
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Week 7</h1><br>
+      <h5 class="w3-center">Electronics Design.  </h5>
+        <p class="w3-large"> This week of Fab Academy we have been introduced to electronics design using KiCAD. KiCAD is a software suite for electronic design automation. It facilitates the design of schematics for electronic circuits and their conversion to PCB designs and this helps with the workflow since everything that needs to be done is available right within 1 software. Plus we were able to hook up a few libraries to the software which gave us the chance to basically design or modify any PCB we wanted.  </p>
+
+      <p class="w3-large w3-text-grey w3-hide-medium"> The Assignment for this week Consists of two parts. </p>
+    </div>
+
+
+    <div class="w3-col m3 w3-hide-medium w3-hide-small w3-padding-large" style="line-height: 1;"><br>
+    <h4><b>Table Of Contents</b></h4>
+    <a href="#gp" class="link"><h5 class="w3-margin-left">Group Work</h5></a>
+         <a href="#iw" class="link"><h5 class="w3-margin-left">Individual Work</h5></a>
+    <a href="#down" class="link"><h5 class="w3-margin-left">Download</h5></a>
+
+
+  </div>
+
+
+    <div class="w3-col m6 w3-padding-large">
+    <video width="320" height="240" autoplay loop muted >
+   <source src="assignments/w7images/grrp/heavy-video%20file.mp4" type="video/mp4">
+
+   Your browser does not support the video.
+</video>
+
+  </div>
+    </div>
+
+
+
+<section id="week7">
+   <div class="container">
+        <h3>Group Assignment: </h3>
+       <ol> Use the test equipment in your lab to observe the operation of a microcontroller. </ol>
+
+        <h3>Individual Assignment: </h3>
+        <ol>Recreate the echo hello-world board and add a button and LED. </ol>
+       <ol> Check the design rules, make it, and test it </ol>
+      <div class="row">
+
+
+
+		<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="2.6s" id="gp">
+            <br>
+            <h2> Group Project </h2>
+            <br>
+            <p>In the group project we learnt how to use a multimeter and oscilloscope. These tools can be very helpful in debugging a circuit board. We tested our equiptment on this circuit:
+                <br>
+                 <img src="assignments/w7images/grrp/group_diagram.jpeg" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+                <br>
+
+            We used the multimeter first, setting it to the DC voltage mode. So with the multimeter we did some basic tests of the readings you can do to test wether the copper is connected as well as a test of the volatge along a path. On the multimeter it was important that the black lead goes to GRD (ground). These were our readings when we placed the red lead at various points(Notice that 5v is the voltage value from the power supply):
+
+A = 5 v,
+B = .5 mv,
+C = 5 v,
+D = 1.68 v.
+
+
+            </p>
+            <br>
+             <p>The next step was to use an oscilloscope. This intrument is signifigantly more complex then the multimeter, but serves to a very similar focus. When we are working with boards that we are programming it is important to see whether or not our board is actually being programmed. On the screen, the oscilloscope showed a graph of the voltage over time. </p>
+            <br>.
+             <img src="assignments/w7images/grrp/2.jpg" class="w3-round w3-image w3-opacity-min" width="300" height="350" >
+            <img src="assignments/w7images/grrp/HANDs-min.jpg" class="w3-round w3-image w3-opacity-min" width="300" height="350" >
+             <img src="assignments/w7images/grrp/line_up-min.jpg" class="w3-round w3-image w3-opacity-min" width="300" height="350" >
+            <br>
+
+
+
+      </div>
+   </div>
+
+    <div class="w3-auto w3-container w3-padding-64">
+
+  <div class="w3-col m9" id="iw">
+    <h1 style="color:#666;">Personal Project</h1>
+    <p><em>Hello World Board:</em></p>
+      <p>
+      Fab Academy already has designed an echo hello-world board, however, this one does not have an LED or a button. I need to redesign it to fit this week's assignment specifications. Unlike <a href="w5.html" class="link">Week 5</a>, I now had the power of designing my own board.
+           <img src="assignments/w7images/kicadd/fabboard.png" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+          <br>
+                 </p>
+      <h4> KiCAD </h4>
+      <br>
+      <p> KiCad is a free software suite for electronic design automation. It facilitates the design of schematics for electronic circuits and their conversion to PCB designs. However, we needed to download an addditional library just to be able to use all the components from this weeks project.</p>
+
+      <p>For this week I had to redraw the echo hello-world board, but with an LED and button. Given the components we had available in the Lab, I made my board using an ATtiny1616 and through-hole header pins. Our professor had provided our class with a circuit drawing of the hello-world board. </p>
+<br>
+        <img src="assignments/w7images/kicadd/install.png" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+
+      <p>I initially created a project and started designing by opening the Schemtic Layout Editor. After opening the layout editor, I wanted to add components so I clicked at the "Place Symbol Tool."I realised a bit later that I didnt have all the parts that were needed so Idownloaded and installed 2 additional libraries from the internet. For each of the 2 libraries I also had to seperatley install their symbols and footprints</p>
+      <img src="assignments/w7images/kicadd/components%20nstall.png" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+
+      <p> This is what the fully designed piece looked like: </p>
+      <img src="assignments/w7images/kicadd/coponents.png"  class="w3-round w3-image w3-opacity-min" width="600" height="750">
+      <br>
+      <p>Once I had a schematic diagram, I opened up the PCB Layout Editor. Here I clicked "Update PCB from schematic". This imported my components and wires which I could then edit. I then connected all the parts making sure that neither of the wires were too close to each other. I even added my <a href="https://www.instagram.com/undone_by_r" class="link"> Brand </a> name on it</p>
+      <br>
+      <img src="assignments/w7images/kicadd/just%20before%20final.png"  class="w3-round w3-image w3-opacity-min" width="600" height="750">
+
+      <br>
+      <p>I had to then add the footprints for the pin headers because I was using through-hole instead of surface mount pins. I followed <a href="https://docs.google.com/document/d/1-jD447YFuL9eKenok4brn4kcMvlrLs06R5oRBqpXCb4/edit?usp=sharing" class="link"> these </a> instructions, to go back to the Schematics Layout Editor and change the assigned footprints for the components. Then I needed an outline for my board so I can cut it out of the PCB after the precision mill finished milling it.</p>
+      <br>
+      <img src="assignments/w7images/kicadd/wht%20it%20should%20lookk%20like.png"  class="w3-round w3-image w3-opacity-min" width="600" height="750">
+
+            <br>
+            <h3> Image processing </h3>
+            <br>
+                <p>
+            From here, I exported the layers individually, and combined, as SVG files. However, I needed to get a seperate file with the holes cut out. Once they are seperated you create a white square send it to the back, and you should have black holes where you need to drill holes and white everywhere else</p>
+        <br>
+      <img src="assignments/w7images/grrp/holes.png" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+      <p> All the other files from this process can be found <a href="#down" class="link"> here. </a> </p>
+      <br>
+
+      <h4> MODS</h4>
+
+
+                  <p> After a lot of experience I had finally conquered MODS and the smoothness of this step just goes to prove it. </p>
+            <br>
+            <img src="assignments/w7images/kicadd/cut%20oout8-min.jpg" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+            <br>
+
+      <h5> Final steps</h5>
+      <br>
+      <p> Finally its time to put the components on. From my experience in the week 5 assignment, putting the biggest pieces last was the best option. However, I had put the connector pins (headers) first because I used wire solder rather than solder paste for them. Reason for this is because using wire solder is stronger and in this case it also can withstand more heat. AFter finishing soldering the board looked like: </p>
+
+
+      <br>
+      <p> After completing my board, I checked it with a multimeter and all of it seemed about right. Then I moved on to coding. <br>
+          To code it I used a FTDI USB-to-serial cable. We will also later use this cable to connect my board to the computer to send and receive messages between the 2. </p>
+      <br>
+      <p>I used Fab Academy's echo hello-world code to code my PCB. However, because I use a 1616 as coompared to a 1614 i needed to make a few changes. I also included a few more things. For example it outputs my favourite quote in binary - "There is no light at the end of the tunnel, you make your own" in binary by turning on and off the LEDs.
+Moreover, to code my PCB, I needed to set up my Arduino IDE to recognize my ATtiny 1616. </p>
+
+      <p>After setting up my laptop to code the chip, I used some help from my roommate to code my chip. You can find his website for the same <a href="hhttp://fabacademy.org/2021/labs/wheaton/students/ozgur-tunaozturk/assignments/week7.html" class="link"> here </a></p>
+
+
+          </div>
+
+        <br>
+    </div>
+    </div>
+     </section>
+
+
+<hr>
+    <h2 id="down"> Files</h2>
+      <ul style="list-style-type: none">
+          <li><a href="assignments/w7images/kicadd/holes.png.rml" download class="w3-hover-text-black">Holes.png.rml</a></li>
+          <li><a href="assignments/w7images/kicadd/outline.png.rml" download class="w3-hover-text-black">Outline.png.rml</a></li>
+           <li><a href="assignments/w7images/kicadd/traces.png.rml" download class="w3-hover-text-black">traces.pnng.rml</a></li>
+     </ul>
+
+
+
+
+     </div>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-16">
+
+  <p>Work by <a href="https://www.instagram.com/undone_by_r" title="info" target="_blank" class="w3-hover-text-green">Rushil Bhatia</a></p>
+</footer>
+</body>
+</html>
+
