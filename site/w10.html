@@ -1,0 +1,174 @@
+!DOCTYPE HTML>
+
+<html>
+<link href="css/style.css" rel="stylesheet">
+    <title> Week  10 </title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    @media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+    </style>
+<body>
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>Rushil</b> Bhatia</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">Home Page</a>
+      <a href="Final Project.html" class="w3-bar-item w3-button">Assignments</a>
+    <a href="More.html" class="w3-bar-item w3-button">Final Project</a>
+    </div>
+  </div>
+</div>
+<div class="w3-content" style="max-width:1100px">
+
+
+ <div class="w3-row w3-display-container" id="body">
+<div class="w3-auto w3-container w3-padding-64">
+<div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Week 10</h1><br>
+      <h5 class="w3-center">Input Devices </h5>
+         <p class="w3-large"> This week's assignment is aimed to make or modify our board that we have designed before, by adding a sensor and testing it. </p>
+     <p class="w3-large w3-text-grey w3-hide-medium"> I wanted to make a new board, something i could work with towards my final poject. This week I changed my final project and wanted to use a LiDAR sensor to find distance </p>
+
+      <p class="w3-large w3-text-grey w3-hide-medium"> The Assignment for this week Consists of two parts. </p>
+    </div>
+    <div class="w3-col m3 w3-hide-medium w3-hide-small w3-padding-large" style="line-height: 1;"><br>
+    <h4><b>Table Of Contents</b></h4>
+    <a href="#gp" class="link"><h5 class="w3-margin-left">Group Work</h5></a>
+         <a href="#iw" class="link"><h5 class="w3-margin-left">Individual Work</h5></a>
+    <a href="#down" class="link"><h5 class="w3-margin-left">Download</h5></a>
+
+
+  </div>
+
+
+    <div class="w3-col m6 w3-padding-large">
+    <video width="350" height="300" autoplay mute loop>
+   <source src="assignments/w10images/group project/vid10w.mp4" type="video/mp4">
+
+   Your browser does not support the video.
+</video>
+
+  </div>
+    </div>
+
+
+
+<section id="week8">
+   <div class="container">
+      <div class="row">
+		<div class="wow fadeInUp col-md-7 col-sm-7" id="iw">
+            <br>
+            <h1 style="color:#666;">Personal Project</h1>
+
+            <p>For this week i wanted to start setting up my final project. So first i started with looking up different ways to find the range using sensors. There are multiple ways to do it but im choosing lidar. Lidar is an acronym of "light detection and ranging" or "laser imaging, detection, and ranging".
+                <br>
+
+                Lidar is commonly used to make high-resolution maps, with applications in surveying, geodesy, geomatics, archaeology, geography, geology, geomorphology, seismology, forestry, atmospheric physics, laser guidance, airborne laser swath mapping (ALSM), and laser altimetry. The technology is also used in control and navigation for some autonomous cars.
+
+            <br>
+            After some research I got around to getting <a href="https://www.amazon.com/gp/product/B088NVX2L7?pf_rd_r=MBJXZKZPV97T8GYRJ5QV&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=a4c7d711-7db9-40b2-b6c1-361fc6ece08d&pd_rd_w=7GfW4&pd_rd_wg=4YtTs&ref_=pd_gw_unk" class="w3-button w3-opacity">this</a> lidar sensor for its price and compatibilty with I2C.
+                <br><br>
+                After that I started designing the board. It took me a while to figure oout how to make the board.I ended up with this:
+                <img src="assignments/w10images/solo/ki1.png" style="width:80%">
+                <br><br>
+                <img src="assignments/w10images/solo/ki2.png" alt="w1" style="width:80%">
+                  <br><br>
+                As you can see it still shows that there is one connection incomplete. That is because there is no other way to design the board without making a false resistor path over there. After this i had to mill the board. After 3 tries i finally milled the board and got the soddering done.
+                <br><br>
+                <?img src="assignments/w10images/solo/ki2.png" alt="w1" style="width:80%"?>
+                  <br><br>
+                I then used the arduino software to code the chip. I used the ATTiny 1616 chip. It took me a while to find a useable library for it but i  eventually ended up using this
+
+
+            </p>
+
+      </div>
+   </div>
+
+    <div class="w3-auto w3-container w3-padding-64">
+
+  <div class="w3-col m9" id="gp">
+    <h1 style="color:#666;">Group Project</h1>
+
+      <p>For our group assignment this week, we tested a few input devices and how they worked. we used variety of different devices, a breadboard, a 5V power supply, a resistor and various input devices. We then used the breadboard to layout our circuit and we used the resistor to record the voltage changes using a multimeter across the resistor after we connected the input devices and played with them.</p>
+      <br>
+
+      <div class="w3-quarter">
+      <img src="assignments/w10images/group project/resist.jpg" alt="w1" style="width:100%">
+          <br>
+          <p>Here you can see us putting the test breadboard together</p>
+    </div>
+     <div class="w3-row-padding w3-padding-16 w3-center" id="W104">
+
+
+    <div class="w3-quarter">
+      <img src="assignments/w10images/group%20project/1.png" alt="w1" style="width:100%">
+    </div>
+
+
+    <div class="w3-quarter">
+     <img src="assignments/w10images/group%20project/2.png" alt="w1" style="width:100%">
+    </div>
+
+
+    <div class="w3-quarter">
+     <img src="assignments/w10images/group%20project/resist.png" alt="w1" style="width:100%">
+    </div>
+
+
+    <div class="w3-quarter">
+     <img src="assignments/w10images/group%20project/no%20code.png" alt="w1" style="width:100%">
+    </div>
+
+
+
+    <div class="w3-quarter">
+     <img src="assignments/w10images/group%20project/final.png" alt="w1" style="width:100%">
+    </div>
+
+
+
+  </div>
+        </div>
+       </div>
+    </div>
+
+
+     </section>
+
+
+
+
+
+<hr>
+    <h2 id="down"> Files</h2>
+      <ul style="list-style-type: none">
+          <li><a href="assignments/w10images/tf%20luna%20manual.pdf.zip" download class="w3-hover-text-black">tf luna manual</a></li>
+          <li><a href="assignments/w10images/tf%20luna%20manual.pdf.zip" download class="w3-hover-text-black">tf luna manual</a></li>
+
+     </ul>
+     </div>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-16">
+
+  <p>Work by <a href="https://www.instagram.com/undone_by_r" title="info" target="_blank" class="w3-hover-text-green">Rushil Bhatia</a></p>
+</footer>
+</body>
+</html>
+
