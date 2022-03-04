@@ -15,7 +15,8 @@
         h3,
         h4,
         h5,
-        h6 {
+        h6,
+        p {
             font-family: "Montserrat", sans-serif
         }
 
@@ -41,6 +42,35 @@
             #main {
                 margin-left: 0
             }
+        }
+
+        .imgHolder>p {
+            text-align: center;
+
+        }
+
+        .imgHolder {}
+
+        a>img {
+            max-height: 102px;
+            max-width: 90px;
+            margin: auto;
+
+        }
+
+        .gridPhoto {
+            justify-content: space-around;
+            padding: 15px;
+            max-width: 500px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .half {
+
+            flex: auto;
+            max-width: 250px;
+            background-color: antiquewhite;
         }
 
     </style>
@@ -188,21 +218,34 @@
         <div class="w3-padding-64 w3-content" id="photos">
             <h2 class="w3-text-light-grey">Links</h2>
             <hr style="width:200px" class="w3-opacity">
-
             <!-- Grid for photos -->
-            <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-half">
-                    <a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg" style="width:50px"></a>
-                    <img src="/w3images/rocks.jpg" style="width:100%">
-                    <img src="/w3images/sailboat.jpg" style="width:100%">
+            <div style="" class="gridPhoto">
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
+                </div>
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
+                </div>
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
+                </div>
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
                 </div>
 
-                <div class="w3-half">
-                    <img src="/w3images/underwater.jpg" style="width:100%">
-                    <img src="/w3images/chef.jpg" style="width:100%">
-                    <img src="/w3images/wedding.jpg" style="width:100%">
-                    <img src="/w3images/p6.jpg" style="width:100%">
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
                 </div>
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
+                </div>
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
+                </div>
+                <div class="imgHolder"><a href="fabacad/index.html"><img src="/fabacad/images/w5image%20cover.jpg"></a>
+                    <p class="heading">Fabacademy</p>
+                </div>
+
                 <!-- End photo grid -->
             </div>
             <!-- End Portfolio Section -->
